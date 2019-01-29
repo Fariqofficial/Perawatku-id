@@ -1,0 +1,214 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/lightsteelblue"
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAMA LENGKAP"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_fullname" />
+
+    </RelativeLayout>
+
+    <EditText
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_border"
+        android:id="@+id/input.fullname"
+        style="@style/InputType2"
+        tools:text="Teguh Muhammad Zundi" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/lightsteelblue"
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_mail" />
+
+    </RelativeLayout>
+
+    <TextView
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_border"
+        android:id="@+id/input.email"
+        style="@style/InputType2"
+        android:layout_marginBottom="2dp"
+        tools:text="teguhzundi@gmail.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#f00"
+        android:textSize="11sp"
+        android:text="Alamat email tidak dapat dirubah."/>
+
+    <CheckBox
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/passwd.check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Ubah Password" />
+
+    <!-- Password -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/passwd.group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#f4f4f4"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/lightsteelblue"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD LAMA"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_loc"/>
+
+        </RelativeLayout>
+
+        <EditText
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_border"
+            android:id="@+id/input.passwd.old"
+            style="@style/InputType2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/lightsteelblue"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD BARU"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_loc" />
+
+        </RelativeLayout>
+
+        <EditText
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_border"
+            android:id="@+id/input.passwd"
+            style="@style/InputType2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/lightsteelblue"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ULANGI PASSWORD BARU"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_loc" />
+
+        </RelativeLayout>
+
+        <EditText
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_border"
+            android:id="@+id/input.passwd.conf"
+            style="@style/InputType2"/>
+
+    </LinearLayout>
+
+    <!-- Button Save -->
+    <TextView
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/btn.save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SIMPAN"
+        android:gravity="center"
+        android:clickable="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_flat_blue"/>
+
+</LinearLayout>

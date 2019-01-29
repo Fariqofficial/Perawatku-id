@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.zundi.perawatindonesia.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_below="@+id/include"
+                android:id="@+id/img_logo"
+                android:layout_width="250dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:elevation="9dp"
+                android:src="@drawable/logo"/>
+
+            <RelativeLayout
+                android:layout_below="@id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <EditText
+                        android:background="@drawable/shape_border"
+                        android:id="@+id/input.email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:drawablePadding="16dp"
+                        style="@style/InputType1"/>
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_border"
+                        android:id="@+id/input.passwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Password"
+                        android:drawableLeft="@drawable/ic_loc"
+                        android:drawablePadding="16dp"
+                        style="@style/InputType1"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingLeft="16dp"
+                        android:drawableLeft="@drawable/ic_touch"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/btn.login"
+                        android:layout_width="210dp"
+                        android:layout_weight="1"
+                        android:layout_height="57dp"
+                        android:text="MASUK"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button_flat_blue"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

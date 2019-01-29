@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/item.materi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="2dp"
+            tools:text="Materi Cinta "/>
+
+        <TextView
+            android:id="@+id/item.soal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@android:color/black"
+            tools:text="Ada berapa fajar didunia ini ? "
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/item.choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/item.choice.a"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="A"/>
+
+            <RadioButton
+                android:id="@+id/item.choice.b"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="B"/>
+
+            <RadioButton
+                android:id="@+id/item.choice.c"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="C"/>
+
+            <RadioButton
+                android:id="@+id/item.choice.d"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="D"/>
+
+            <RadioButton
+                android:id="@+id/item.choice.e"
+                android:lineSpacingExtra="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="E"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "291776863847",
+    "firebase_url": "https://zunddie-ccc8a.firebaseio.com",
+    "project_id": "zunddie-ccc8a",
+    "storage_bucket": "zunddie-ccc8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291776863847:android:e5bd1b308c446dc7",
+        "android_client_info": {
+          "package_name": "com.zundi.perawatindonesia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291776863847-okvqlocnqpctfuo0llkcfuiu3kfacf02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zundi.perawatindonesia",
+            "certificate_hash": "3eb8b6547bf5520882bdfebdf7e915cdd5e46ec4"
+          }
+        },
+        {
+          "client_id": "291776863847-sc6p6s58df3ekoteo89cvdha7dor072l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSXmge0Epc6ckQ8GROv5lPGJRlHh8ExrQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291776863847-sc6p6s58df3ekoteo89cvdha7dor072l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

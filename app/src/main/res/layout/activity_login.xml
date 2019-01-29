@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zundi.perawatindonesia.LoginActivity"
+    android:background="@drawable/bg_home">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:gravity="center"
+                android:id="@+id/login.btn.signin"
+                android:layout_width="250dp"
+                android:layout_height="57dp"
+                android:text="MASUK"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_flat_blue"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_below="@id/login.btn.signin"
+                android:id="@+id/login.btn.signup"
+                android:layout_width="250dp"
+                android:layout_height="57dp"
+                android:text="REGISTRASI"
+                android:gravity="center"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_flat_purple"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#20000000">
+
+            <TextView
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_margin="20dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

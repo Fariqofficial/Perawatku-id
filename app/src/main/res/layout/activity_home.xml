@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zundi.perawatindonesia.SignInActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:clickable="true"
+                android:scrollbars="none"
+                android:id="@+id/home.gridmenu"
+                android:listSelector="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:padding="32dp"
+                android:horizontalSpacing="16dp"
+                android:verticalSpacing="16dp"
+                android:numColumns="2"
+                android:scrollbarStyle="outsideInset"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textStyle="bold"
+                        android:id="@+id/mnu.profile"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="PROFIL"
+                        android:drawableTop="@drawable/ic_profile"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/bg_profile"
+                        android:onClick="mnuClick"
+                        tools:ignore="OnClick" />
+
+                    <TextView
+                        android:layout_marginBottom="2dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:id="@+id/mnu.chat"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="CHAT"
+                        android:drawableTop="@drawable/ic_chat"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btn_chat"
+                        android:onClick="mnuClick"
+                        tools:ignore="OnClick" />
+                </TableRow>
+
+            </TableLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

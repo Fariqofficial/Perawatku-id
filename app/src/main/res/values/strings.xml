@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Perawatku.Id</string>
+    <string name="signin_activity">Masuk</string>
+    <string name="signup_activity">Registrasi</string>
+    <string name="home_activity">Menu Utama</string>
+    <string name="profile_activity">Profil Saya</string>
+    <string name="chat_activity">Obrolan</string>
+    <string name="test_activity">Ujikom</string>
+    <string name="test_opening">
+        Terdapat 8 materi dalam ujikom ini, setiap materi ada 180 soal yang urutannya diacak.
+        \n\n
+        1. Materi Gerontik\n
+        2. Materi Keperawatan Anak\n
+        3. Materi Keperawatan Jiwa\n
+        4. Materi Keperawatan Keluarga\n
+        5. Materi KMB\n
+        6. Materi Komunitas\n
+        7. Manajemen Keperawatan\n
+        8. Materi MANTERNITAS
+        \n\n
+        Waktu pengerjaan soal 180 menit.
+        \n
+        Catatan : Setiap soal hanya bisa dijawab 1 kali.
+    </string>
+</resources>

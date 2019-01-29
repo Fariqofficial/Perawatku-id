@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zundi.perawatindonesia.TestNextActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Untuk Timer -->
+        <TableLayout
+            android:id="@+id/test.header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/test.count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="16dp"
+                    tools:text="02.00"/>
+
+                <ProgressBar
+                    android:id="@+id/test.progressbar"
+                    android:max="100"
+                    android:progress="10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="?android:attr/progressBarStyleHorizontal"/>
+                </TableRow>
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_below="@+id/test.header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zundi.perawatindonesia.util.ViewPagerLocked
+                android:id="@+id/test.pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="50dp"/>
+
+            <TableLayout
+                android:id="@+id/test.footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/btn.prev"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:text="SELESAI"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:background="@drawable/button_rounded"/>
+
+                    <TextView
+                        android:id="@+id/test.page"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        tools:text="1/100"/>
+
+                    <TextView
+                        android:id="@+id/btn.next"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="SELANJUTNYA"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:background="@drawable/button_rounded"/>
+                </TableRow>
+            </TableLayout>
+
+            <!-- Untuk Jawaban Benar -->
+            <include
+                android:id="@+id/test.benar"
+                layout="@layout/item_page_benar"/>
+
+            <!-- Untuk Jawaban Salah -->
+            <include
+                android:id="@+id/test.salah"
+                layout="@layout/item_page_salah"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:layout_marginLeft="40dp"
+    android:layout_marginBottom="16dp"
+    android:padding="8dp"
+    android:background="@drawable/bg_chat_self">
+
+    <TextView
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/item.list.author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        tools:text="Author"/>
+
+    <TextView
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/item.list.date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        tools:text="Jam Pesan"/>
+
+    <TextView
+        fontPath="fonts/Poppins-Bold.otf"
+        tools:ignore="MissingPrefix"
+        android:id="@+id/item.list.text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:lineSpacingExtra="3dp"
+        tools:text="Ini untuk pesan dalam mencapai cita cita yang kita inginkan"/>
+
+
+</LinearLayout>

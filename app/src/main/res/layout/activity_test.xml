@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_opening"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/btn.test"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="MULAI UJIAN"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_flat_blue"/>
+
+    </LinearLayout>
+</LinearLayout>
